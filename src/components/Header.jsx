@@ -11,7 +11,6 @@ export default function Header() {
     try {
       await logoutRequest();
     } catch {
-      // Локальний вихід виконуємо навіть якщо backend тимчасово недоступний.
     }
     logout();
     navigate("/");
